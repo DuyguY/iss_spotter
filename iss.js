@@ -66,7 +66,7 @@ const request = require('request');
 
      fetchCoordsByIP(ip, (error, loc) => {
        if (error) {
-         return callback(error,null)
+         return callback(error,null);
        }
 
        fetchISSFlyOverTimes(loc, (error, nextPasses) => {
